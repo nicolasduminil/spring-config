@@ -13,7 +13,7 @@ jms:
     url: tcp://activemq:61616
 spring:
   main:
-    banner-mode: off
+    banner-mode: false
   activemq:
     packages:
       trust-all: true
