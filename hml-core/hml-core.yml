@@ -1,8 +1,22 @@
-logging.file: "/var/log/gts/gts.log"
-logging.level.: "WARN"
-keycloak.enabled: "false"
-server.context-path: "/hml"
-jms.destination.name: "hml.global.topic"
-jms.broker.url: "tcp://activemq:61616"
-spring.main.banner-mode: "off"
-spring.activemq.packages.trust-all: "true"
+logging:
+  file: /var/log/gts/gts.log
+logging:
+  level:
+    ROOT: WARN
+keycloak:
+  enabled: false
+server:
+  context-path: /hml
+jms:
+  destination:
+    name: hml.global.topic
+jms:
+  broker:
+    url: tcp://activemq:61616
+spring:
+  main:
+    banner-mode: off
+spring:
+  activemq:
+    packages:
+      trust-all: true
