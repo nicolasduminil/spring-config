@@ -1,3 +1,6 @@
+logging:
+  level:
+    ROOT: info
 jms:
   destination:
     name: hml.global.topic
