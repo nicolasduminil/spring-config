@@ -1,3 +1,8 @@
+logging:
+  level:
+    ROOT: ERROR
+    org.springframework.web: ERROR
+    fr.simplex_software.micro_services.core: DEBUG
 jms:
   destination:
     name: hml.global.topic
@@ -7,3 +12,12 @@ spring:
   activemq:
     packages:
       trust-all: "true"
+eureka:
+  instance:
+    preferIpAddress: false
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
+
