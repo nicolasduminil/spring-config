@@ -2,6 +2,7 @@ logging:
   level:
     ROOT: ERROR
     org.springframework.web: ERROR
+    org.springframework.web.client: DEBUG
     fr.simplex_software.micro_services.core: DEBUG
 jms:
   destination:
