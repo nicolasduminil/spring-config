@@ -21,4 +21,8 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://ms-discovery:8761/eureka/
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
