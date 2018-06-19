@@ -15,18 +15,20 @@ spring:
       trust-all: "true"
 eureka:
   instance:
-    preferIpAddress: true
+    preferIpAddress: "true"
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    registerWithEureka: "true"
+    fetchRegistry: "true"
     serviceUrl:
-      defaultZone: http://ms-discovery:8761/eureka/
+      defaultZone: "http://ms-discovery:8761/eureka/"
 management:
   endpoints:
     web:
       exposure:
         include: "hystrix.stream, info, health"
   security:
-    enabled: false
-    
+    enabled: "false"
+zuul:
+  routes:
+    hml-core: hml-core
 
