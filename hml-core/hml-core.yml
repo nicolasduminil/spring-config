@@ -27,5 +27,11 @@ management:
       exposure:
         include: "hystrix.stream, info, health"
 zuul:
-  prefix:  /api
+  ignored-services: "*"
+  prefix:  "/api"
+  routes:
+    publish: "/publish/**"
+    subscribe: "/subscribe/**"
+    services: "/services/**"
+    
 
