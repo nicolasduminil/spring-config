@@ -28,9 +28,9 @@ management:
         include: "hystrix.stream, info, health"
   security:
     enabled: "false"
-zuul:
-  routes:
-    hml-core: api/**
+#zuul:
+  #routes:
+    #hml-core: api/**
 
 
 
