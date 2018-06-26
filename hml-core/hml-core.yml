@@ -15,7 +15,7 @@ spring:
       trust-all: "true"
 eureka:
   instance:
-    preferIpAddress: "true"
+    preferIpAddress: "false"
   client:
     registerWithEureka: "true"
     fetchRegistry: "true"
@@ -30,5 +30,5 @@ management:
     enabled: "false"
 zuul:
   routes:
-    hml-core: hml-core
+    hml-core: hml
 
