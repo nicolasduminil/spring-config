@@ -30,5 +30,7 @@ management:
     enabled: "false"
 zuul:
   routes:
-    hml-core: hml-routing
+    hml-core: api/**
+
+
 
