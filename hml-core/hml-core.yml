@@ -15,7 +15,7 @@ spring:
       trust-all: "true"
 eureka:
   instance:
-    preferIpAddress: "false"
+    preferIpAddress: "true"
   client:
     registerWithEureka: "true"
     fetchRegistry: "true"
