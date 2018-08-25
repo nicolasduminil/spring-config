@@ -29,6 +29,7 @@ management:
   security:
     enabled: "true"
 keycloak:
+  enable-basic-auth: "true"
   auth-server-url: "http://keycloak:8080/auth"
   realm: "master"
   resource: "customer-manager-client"
@@ -36,9 +37,15 @@ keycloak:
   principal-attribute: "preferred_username"
   bearer-only: "true"
   ssl-required: "external"
-  confidential-port: "0"
-  enable-cors: "true"
+  #confidential-port: "0"
+  #enable-cors: "true"
   role: "customer-manager"
-  pattern: "/api*"
+  pattern: "/hml-core/*"
+  security-constraints:
+    authRoles:
+      - customer-manager
+    security-collections:
+      -name: "application"
+      -paterns: "/hml-core/*"
 
 
