@@ -44,7 +44,8 @@ keycloak:
        - customer-manager
     - security-collections:
        - name: "application"
-       - paterns: "/hml-core/*"
+       - paterns: 
+         - /hml-core/*
 security:
   role: "customer-manager"
   pattern: "/hml-core/*"
