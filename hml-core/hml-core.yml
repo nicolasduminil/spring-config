@@ -39,13 +39,14 @@ keycloak:
   ssl-required: "external"
   #confidential-port: "0"
   #enable-cors: "true"
+  security-constraints:
+    - authRoles:
+       - customer-manager
+    - security-collections:
+       -name: "application"
+       -paterns: "/hml-core/*"
+security:
   role: "customer-manager"
   pattern: "/hml-core/*"
-  security-constraints:
-    authRoles:
-      - customer-manager
-    security-collections:
-      -name: "application"
-      -paterns: "/hml-core/*"
 
 
