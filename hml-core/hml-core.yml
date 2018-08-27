@@ -45,5 +45,7 @@ keycloak.security-constraints[0].securityCollections[0].patterns[0]: /hml-core/*
 security:
   role: "customer-manager"
   pattern: "/hml-core/*"
+zuul:
+  sensitiveHeaders: Cookie, Set-Cookie
 
 
