@@ -1,9 +1,9 @@
 logging:
   level:
-    ROOT: ERROR
+    ROOT: DEBUG
     org.springframework.web: ERROR
     org.springframework.web.client: ERROR
-    fr.simplex_software.micro_services.core: ERROR
+    fr.simplex_software.micro_services.core: DEBUG
 jms:
   destination:
     name: hml.global.topic
@@ -42,7 +42,7 @@ keycloak.security-constraints[0].securityCollections[0].name: hml-core
 keycloak.security-constraints[0].securityCollections[0].patterns[0]: /api/*
 security:
   role: "customer-manager"
-  pattern: "/hml-core/*"
+  pattern: "/api/*"
   user: security-admin
   password: admin
   client-id: curl
