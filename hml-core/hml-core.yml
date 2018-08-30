@@ -27,7 +27,7 @@ management:
       exposure:
         include: "hystrix.stream, info, health"
   security:
-    enabled: "true"
+    enabled: "false"
 keycloak:
   enable-basic-auth: "true"
   auth-server-url: "http://keycloak:8080/auth"
