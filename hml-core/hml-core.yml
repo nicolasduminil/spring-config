@@ -1,9 +1,6 @@
 logging:
   level:
     ROOT: ERROR
-    org.springframework.web: ERROR
-    org.springframework.web.client: DEBUG
-    fr.simplex_software.micro_services.core: DEBUG
 jms:
   destination:
     name: hml.global.topic
@@ -26,17 +23,17 @@ management:
     web:
       exposure:
         include: "hystrix.stream, info, health"
-keycloak:
-  auth-server-url: http://keycloak:8080/auth
-  realm: master
-  resource: customer-manager-client
-  public-client: true
-  principal-attribute: preferred_username
-  bearer-only: true
-  ssl-required: external
-  confidential-port: 0
-  enable-cors: true
-  role: customer-manager
-  pattern: /api*
+#keycloak:
+#  auth-server-url: http://keycloak:8080/auth
+#  realm: master
+#  resource: customer-manager-client
+#  public-client: true
+#  principal-attribute: preferred_username
+#  bearer-only: true
+#  ssl-required: external
+#  confidential-port: 0
+#  enable-cors: true
+#  role: customer-manager
+#  pattern: /api*
 
 
