@@ -37,6 +37,6 @@ keycloak:
   confidential-port: 0
   enable-cors: true
   role: customer-manager
-pattern: /api*
+  pattern: /api*
 
 
