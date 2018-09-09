@@ -31,7 +31,6 @@ keycloak:
   principal-attribute: preferred_username
   bearer-only: true
   ssl-required: external
-  enable-cors: true
   role: customer-manager
   pattern: /api*
 
