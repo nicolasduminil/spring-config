@@ -23,17 +23,17 @@ management:
     web:
       exposure:
         include: "hystrix.stream, info, health"
-keycloak:
-  auth-server-url: http://localhost:18080/auth
-  realm: master
-  resource: customer-manager-client
-  public-client: true
-  principal-attribute: preferred_username
-  bearer-only: true
-  ssl-required: external
-keycloak.security-constraints[0].authRoles[0]: customer-manager
+#keycloak:
+#  auth-server-url: http://localhost:18080/auth
+#  realm: master
+#  resource: customer-manager-client
+#  public-client: true
+#  principal-attribute: preferred_username
+#  bearer-only: true
+#  ssl-required: external
+#keycloak.security-constraints[0].authRoles[0]: customer-manager
 #keycloak.security-constraints[0].securityCollections[0].name: hml-core
-keycloak.security-constraints[0].securityCollections[0].patterns[0]: /api/*
-zuul:
-  sensitiveHeaders: Cookie, Set-Cookie
+#keycloak.security-constraints[0].securityCollections[0].patterns[0]: /api/*
+#zuul:
+#  sensitiveHeaders: Cookie, Set-Cookie
 
