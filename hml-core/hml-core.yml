@@ -17,7 +17,7 @@ eureka:
     registerWithEureka: "true"
     fetchRegistry: "true"
     serviceUrl:
-      defaultZone: "http://ms-discovery:8761/eureka/"
+      defaultZone: "http://192.19.0.5:8761/eureka/"
 management:
   endpoints:
     web:
