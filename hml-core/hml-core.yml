@@ -33,7 +33,7 @@ keycloak:
   ssl-required: external
 keycloak.security-constraints[0].authRoles[0]: customer-manager
 keycloak.security-constraints[0].securityCollections[0].patterns[0]: /api/*
- zuul:
+zuul:
   routes:
     users:
       sensitiveHeaders: Cookie,Set-Cookie,Authorization
