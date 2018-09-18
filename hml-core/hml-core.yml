@@ -23,12 +23,12 @@ management:
     web:
       exposure:
         include: "hystrix.stream, info, health"
-keycloak:
-  server-url: http://192.19.0.3:8080/auth/
-  realm: master
-  user-name: "customer-admin"
-  user-password: "admin"
-  client-id: "curl"
+#keycloak:
+#  server-url: http://192.19.0.3:8080/auth/
+#  realm: master
+#  user-name: "customer-admin"
+#  user-password: "admin"
+#  client-id: "curl"
 zuul:
   sensitiveHeaders: Cookie,Set-Cookie,Authorization
 
