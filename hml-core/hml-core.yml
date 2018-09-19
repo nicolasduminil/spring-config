@@ -1,6 +1,9 @@
 logging:
   level:
     ROOT: ERROR
+    org.springframework.web: ERROR
+    org.springframework.web.client: DEBUG
+    fr.simplex_software.micro_services.core: DEBUG
 jms:
   destination:
     name: hml.global.topic
@@ -12,23 +15,16 @@ spring:
       trust-all: "true"
 eureka:
   instance:
-    preferIpAddress: "true"
+    preferIpAddress: true
   client:
-    registerWithEureka: "true"
-    fetchRegistry: "true"
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
-      defaultZone: "http://192.19.0.5:8761/eureka/"
+      defaultZone: http://ms-discovery:8761/eureka/
 management:
   endpoints:
     web:
       exposure:
-        include: "hystrix.stream, info, health"
-#keycloak:
-#  server-url: http://192.19.0.3:8080/auth/
-#  realm: master
-#  user-name: "customer-admin"
-#  user-password: "admin"
-#  client-id: "curl"
-zuul:
-  sensitiveHeaders: Cookie,Set-Cookie,Authorization
+        include: "*"
+
 
