@@ -36,5 +36,6 @@ keycloak:
   client-id: curl
 zuul:
   sensitiveHeaders: Cookie, Set-Cookie
+  ignored-services: 192.19.0.3
 
 
