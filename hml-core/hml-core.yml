@@ -36,6 +36,9 @@ keycloak:
   client-id: curl
 zuul:
   sensitiveHeaders: Cookie, Set-Cookie
-  ignored-services: 192.19.0.3
+  routes:
+    ms-keycloak:
+      path: /auth/**
+      url: http://192.19.0.9:8085
 
 
