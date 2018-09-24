@@ -7,7 +7,7 @@ jms:
   destination:
     name: hml.global.topic
   broker:
-    url: tcp://active-mq:61616
+    url: tcp://192.19.0.4:61616
 spring:
   activemq:
     packages:
