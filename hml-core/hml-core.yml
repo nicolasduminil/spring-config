@@ -32,7 +32,7 @@ keycloak:
   realm: "master"
   client-id: curl
   ssl-required: external
-  resource: product-service
+  resource: customer-manager-client
   public-client: true
   bearer-only: true
 keycloak.securityConstraints[0].securityCollections[0].name: "protected resource"
@@ -44,8 +44,8 @@ zuul:
     ms-keycloak:
       path: /auth/**
       url: http://192.19.0.9:8085
-
 ms-keycloak:
   user-name: customer-admin
   user-password: admin
+  client-id: curl
 
