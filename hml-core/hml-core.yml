@@ -36,8 +36,7 @@ keycloak:
   bearer-only: true
 keycloak.securityConstraints[0].securityCollections[0].name: "protected resource"
 keycloak.securityConstraints[0].authRoles[0]: "customer-manager"
-keycloak.securityConstraints[0].securityCollections[0].patterns[0]: "/api"
-keycloak.securityConstraints[0].securityCollections[0].patterns[1]: "/api/"
+keycloak.securityConstraints[0].securityCollections[0].patterns[0]: "/api/*"
 zuul:
   sensitiveHeaders: Cookie, Set-Cookie
   routes:
