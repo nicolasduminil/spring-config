@@ -16,6 +16,7 @@ eureka:
   instance:
     preferIpAddress: "true"
   client:
+    prefer-same-zone-eureka: true
     registerWithEureka: "true"
     fetchRegistry: "true"
     serviceUrl:
