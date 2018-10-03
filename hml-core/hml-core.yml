@@ -30,8 +30,6 @@ management:
 keycloak:
   auth-server-url: "http://192.19.0.3:8080/auth"
   realm: "master"
-  user-name: customer-admin
-  user-password: admin
   client-id: curl
   ssl-required: external
   resource: product-service
@@ -47,4 +45,7 @@ zuul:
       path: /auth/**
       url: http://192.19.0.9:8085
 
+ms-keycloak:
+  user-name: customer-admin
+  user-password: admin
 
