@@ -3,6 +3,7 @@ logging:
     ROOT: ERROR
     org.springframework: WARN
     fr.simplex_software.micro_services: DEBUG
+    com.netflix.zuul: DEBUG
 jms:
   destination:
     name: hml.global.topic
