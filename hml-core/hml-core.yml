@@ -17,8 +17,8 @@ spring:
     stream:
       kafka:
         binder:
-          zkNodes: localhost
-          brokers: localhost
+          #zkNodes: localhost
+          brokers: http://192.19.0.10:9092
       bindings: 
         input: 
           destination: events
