@@ -13,6 +13,19 @@ spring:
   activemq:
     packages:
       trust-all: "true"
+  cloud:
+    stream:
+      kafka:
+        binder:
+          zkNodes: localhost
+          brokers: localhost
+      bindings: 
+        input: 
+          destination: events
+          content-type: application/json
+        output:
+          destination: events
+          content-type: application/json
 eureka:
   instance:
     preferIpAddress: "true"
