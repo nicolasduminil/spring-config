@@ -17,7 +17,7 @@ spring:
     stream:
       kafka:
         binder:
-          #zkNodes: localhost
+          zkNodes: http://192.19.0.10:2181
           brokers: http://192.19.0.10:9092
       bindings: 
         input: 
