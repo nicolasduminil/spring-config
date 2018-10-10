@@ -43,17 +43,6 @@ management:
         include: "hystrix.stream, info, health"
   security:
     enabled: "false"
-keycloak:
-  auth-server-url: "http://192.19.0.3:8080/auth"
-  realm: "master"
-  ssl-required: external
-  resource: customer-manager-client
-  public-client: true
-  bearer-only: true
-keycloak.securityConstraints[0].securityCollections[0].name: "protected resource"
-keycloak.securityConstraints[0].authRoles[0]: "customer-manager"
-keycloak.securityConstraints[0].securityCollections[0].patterns[0]: "/api/subscribe/"
-keycloak.securityConstraints[0].securityCollections[0].patterns[1]: "/api/publish/"
 zuul:
   sensitiveHeaders: Cookie, Set-Cookie
   routes:
@@ -63,8 +52,4 @@ zuul:
   debug:
     request: true
   include-debug-header: true
-ms-keycloak:
-  user-name: customer-admin
-  user-password: admin
-  client-id: curl
 
