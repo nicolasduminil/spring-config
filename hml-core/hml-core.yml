@@ -22,10 +22,10 @@ spring:
           offsetUpdateTimeWindow: 60000
       bindings: 
         input: 
-          destination: input
+          destination: kafkaEvent
           content-type: application/json
         output:
-          destination: output
+          destination: kafkaEvent
           content-type: application/json
 eureka:
   instance:
