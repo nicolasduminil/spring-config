@@ -13,20 +13,20 @@ spring:
   activemq:
     packages:
       trust-all: "true"
-  cloud:
-    stream:
-      kafka:
-        binder:
-          zkNodes: localhost
-          brokers: localhost
-          offsetUpdateTimeWindow: 60000
-      bindings: 
-        input: 
-          destination: kafkaEvent
-          content-type: application/json
-        output:
-          destination: kafkaEvent
-          content-type: application/json
+  #cloud:
+    #stream:
+      #kafka:
+        #binder:
+          #zkNodes: localhost
+          #brokers: localhost
+          #offsetUpdateTimeWindow: 60000
+      #bindings: 
+        #input: 
+          #destination: kafkaEvent
+          #content-type: application/json
+        #output:
+          #destination: kafkaEvent
+          #content-type: application/json
 eureka:
   instance:
     preferIpAddress: "true"
